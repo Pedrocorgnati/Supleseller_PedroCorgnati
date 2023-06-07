@@ -1,4 +1,18 @@
+/*Base do documento*/
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    max-height: 100%;
+    font-size: 30px;
+    color: black;
+    font-family: cursive;
+    margin: 20px;
+}
 body{
+    background: rgb(245, 248, 248);
     color: black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif  
 }
@@ -7,46 +21,115 @@ div{
     border: solid blue 3px;
     margin: 2px;
 }
-
-table{
-    text-align: center;
-    vertical-align: center;
-}
-
-th{
-    font-weight: bold;
-}
-td{
-    vertical-align: top;
-    padding-top: 1px;
-    border: dotted gray 0.5px;
-}
-#bordanegra{
-    border: solid black 2px;
-}
 section{
     border: solid black 3px;
     margin: 10px;
 }
-
 .subdiv{
     border: solid green 2px;
 }
+h1{
+    font-size: 30px;
+}
+h2{
+    font-size: 20px;
+}
 
-.img-produto{
+/*Dança dos quadrados*/
+.container{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 1vw;
+    flex-wrap: nowrap; 
+}
+
+.box{
+    margin-right: 15px;
+    text-align: center;
+    width: 100%;
+    max-height: 100%;
+    position: relative; 
+}
+
+
+/*Formatação da tabela do carrinho de compras*/
+table{
+    text-align: center;
+    vertical-align: center;
+    justify-content: center
+    }        
+    th{
+        font-weight: bold;
+        }
+    td{
+        vertical-align: top;
+        padding-top: 1px;
+        border: dotted gray 0.5px;
+        }
+    #bordanegra{
+        border: solid black 2px;
+    }
+    .img-produto{
     width: 2vw;
     vertical-align: center;
     height: auto;
     border: solid white;
+    }
+
+
+/*Botões de disparo*/
+.button-container {
+    display: flex;
+    flex-direction: column;
+  }
+  button {
+    color: black;  
+    border: 0.1vw solid black;
+    height: 3vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    font-size: 15px;
+    background-color:grey;
+    cursor: pointer;
+    border-radius: 0.5vw;
 }
 
+.botao {
+    display: flex;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: green; 
+    color: black;
+}
+
+
+/*Imagem de exemplo*/
 #prototipo{
     position: fixed;
     top: 10px;
     right: 10px;
 }
 
-.button-container {
+.x-button-container {
     display: flex;
     flex-direction: column;
   }
+.x-button {
+    color: white;  
+    font-size: 10px;
+    background-color:black;
+    cursor: pointer;
+    }
+
+
+.x-button:hover {
+    background-color: white; 
+    color: black;
+}
