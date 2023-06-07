@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="author" content="Pedro Corgnati">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles\style.css">
+    <title>SupleSeller</title>
+</head>
+<body>
+    <header>
+        <figure>
+            <img src="Img\Logo PNG.png" alt="logo-SupleSeller">
+            <figcaption>O sistema Bodybuilder de venda de suplementos</figcaption>
+        </figure>
+    </header>
+    <main>
+        <section><!-- BLOCO PRINCIPAL 1, Cliente e PDV-->
+            <section> <!--Primeira coluna do primeiro bloco: Cliente e produto-->
+                <div> <!--Cliente, Whatsapp, Aniversário-->
+                    <div class="subdiv">Cliente</div>
+                    <form>
+                        <label for="cliente"></label>
+                        <input type="text" id="nome" name="nome" placeholder="Ex:João Paulo">
+                    </form>
+                    <div class="subdiv">Whatsapp</div>
+                    <form>
+                        <label for="telefone"></label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="Ex: (12)98117-9683">
+                    </form>
+                    <div class="subdiv">Aniversário</div>
+                    <form>
+                        <label for="aniversario"></label>
+                        <input type="date" id="aniversario" name="aniversario" placeholder="25/01/1989">
+                    </form>
+                    <button>Adicionar</button>
+                </div>
+                <div> <!--Produto, código de barras, quantidade-->
+                    <div class="subdiv">Produto</div>
+                    <form>
+                        <label for="produto"></label>
+                        <input type="text" id="produto" name="produto" placeholder="Ex: Creatina 300g Hopper Creapure">
+                    </form>
+                    <div class="subdiv">Código de barras</div>
+                    <form>
+                        <label for="codigo-de-barras"></label>
+                        <input type="number" id="codigo-de-barras" name="codigo-de-barras"
+                            placeholder="Ex: 7896311766161">
+                    </form>
+                    <div class="subdiv">Quantidade</div>
+                    <form>
+                        <label for="quantidade"></label>
+                        <input type="number" id="quantidade" name="quantidade" placeholder="Ex: 2">
+                    </form>
+                    <button>Adicionar</button>
+                </div>
+            </section>
+            <section> <!--Segunda coluna do primeiro bloco: Carrinho, desconto e fim-->
+                <div> <!-- Carrinho de compras -->
+                        <h1>Carrinho de compras</h1>
+                        <table>
+                            <thead>
+                                <th>Imagem</th>
+                                <th>Produto</th>
+                                <th>Quantidade</th>
+                                <th>Valor</th>
+                                <Th>Editar</Th>
+                            </thead>
+                            <tbody>
+                                <td><img class="img-produto" src="Img\Whey IM.png" /></td>
+                                <td>Whey 900g integralmedica</td>
+                                <td>1 un</td>
+                                <td>170,00</td>
+                                <Td><button>X</button></Td>
+                            </tbody>
+                            <tbody>
+                                <td><img class="img-produto" src="Img\Creatina Max.png" /></td>
+                                <td>Creatina 300g Max Titanium</td>
+                                <td>1 un</td>
+                                <td>190,00</td>
+                                <Td><button>X</button></Td>
+                            </tbody>
+                            <tbody>
+                                <td><img class="img-produto" src="Img\Firetor.png" /></td>
+                                <td>Termogenico Firetor 60tabs</td>
+                                <td>1 un</td>
+                                <td>109,90</td>
+                                <Td><button>X</button></Td>
+                            </tbody>
+                            <tbody>
+                                <td><img class="img-produto" src="" /></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <Td><button></button></Td>
+                            </tbody>
+                            <tbody>
+                                <td><img class="img-produto" src="" /></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <Td><button></button></Td>
+                            </tbody>
+                            <tbody>
+                                <td><img class="img-produto" src="" /></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <Td><button></button></Td>
+                            </tbody>
+                            <tbody>
+                                <td><img class="img-produto" src="" /></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <Td><button></button></Td>
+                            </tbody>
+                            <tbody>
+                                <td><img class="img-produto" src="" /></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <Td><button></button></Td>
+                            </tbody>
+                            <tbody>
+                                <td><img class="img-produto" src="" /></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <Td><button></button></Td>
+                            </tbody>
+                            <tbody>
+                                <td><img class="img-produto" src="" /></td>
+                                <td></td>
+                                <td id="bordanegra">Subtotal</td>
+                                <td colspan="2" id="bordanegra">469,90</td>
+                            </tbody>
+                        </table>
+                    </div>
+                <div><!--Bloco do desconto-->
+                    <div class="subdiv">Desconto
+                        <form>
+                            <label for="desconto"></label>
+                            <input type="number" id="desconto" name="desconto">
+                        </form>
+                    </div>
+                    <div class="subdiv">Outros valores
+                        <form>
+                            <label for="outros-valores"></label>
+                            <input type="number" id="outros-valores" name="outros-valores">
+                        </form>
+                    </div>
+                    <div class="subdiv">Observações
+                        <form>
+                            <label for="observacoes"></label>
+                            <input type="text" id="observacoes" name="observacoes">
+                        </form>
+                    </div>
+                </div>
+                <div> <!--Valor Final e finalizar venda-->
+                    <div class="subdiv">Valor final</div>
+                    <div><button>Finalizar Venda</button></div>
+                </div>
+            </section>    
+        </section>
+        <section><!-- BLOCO PRINCIPAL 2, Cadastro e Disparador de Mensagens-->
+            <section>
+                <h1>Cadastro</h1>
+                <div class="button-container">
+                    <button>Produtos</button>
+                    <button>Clientes</button>
+                    <button>Padrões de Mensagem</button>
+                </div>
+            </section>
+            <section> 
+                <h1>Mensagens</h1>   
+                    <div>
+                        <p>Produto finalizado</p>
+                        <button>Revisar e disparar</button>
+                        <p>Produto em promoção</p>
+                        <button>Revisar e disparar</button>
+                        <p>Datas comemorativas</p>
+                        <button>Revisar e disparar</button>
+                    </div>
+            </section>
+        </section>
+    </main>
+    <!-- <Footer>
+        <figure>
+            <img src="Img\SupleSeller - Esboço.png" id="prototipo">
+            <figcaption>Como deve ser</figcaption>
+        </figure>
+    </Footer> -->
+</body>
+</html>
